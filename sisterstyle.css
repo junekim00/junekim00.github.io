@@ -1,0 +1,75 @@
+/*--team--*/
+.profcontain {
+	display: inline-block;
+	width: 100%;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	text-align: center!important;
+}
+
+.tab-contain {
+  overflow: hidden;
+  border: 1px solid #000;
+  background-color: #ffd0d7;
+}
+
+.tab-contain button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1vw 1vh;
+  transition: 0.3s;
+}
+
+.tab-contain button:hover {
+  background-color: #9B111E;
+}
+
+.tab-contain button.active {
+  background-color: #ff9dac;
+}
+
+.tabcontent {
+	display: none;
+}
+
+.fourth {
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.profile {
+	border-radius: 50%;
+}
+
+.profile:hover {
+	opacity: 0.6;
+}
+
+h2 {font-size: 5vh;}
+/*--end team--*/
+
+/*--event--*/
+.events {
+	padding-left: 1vw;
+	padding-right: 1vw; 
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	color:white; 
+	background-color:#303030;}
+
+.fourthe {
+	float: left;
+	width: 24%;}
+
+.event {
+	margin: 0.5vw;
+	padding: 1vw;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	color:black;
+	background-color:white;}
+
+/*--end event--*/

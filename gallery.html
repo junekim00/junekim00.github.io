@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Gallery</title>
+<!--metas-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore the experiences of our sisters in our gallery.">
+<!--end metas-->
+
+<!--uicons-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<!---->
+
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,800,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+<!---->
+
+<link rel="stylesheet" type="text/css" href="sharedstyle.css">
+<link rel="stylesheet" type="text/css" href="gallerystyle.css">
+</head>
+
+<body>
+<!--nav-->
+<div class="nav">
+	
+	<nav>
+
+		<input type="checkbox" id="navbutton">
+		<label for="navbutton">menu</label>
+
+		<div class="clearfloat"></div>
+		
+		<div class="nav-content">
+		<ul>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/contact.html">contact</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/rush.html">rush</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/gallery.html">gallery</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/sister.html">sisters</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/home.html">home</a></li>
+		</ul>
+		</div>
+
+	</nav>
+
+</div>
+<!--end nav-->
+
+<!--image header-->
+<div class="imghead" id="top">
+	<img class="imgheadimg" src="img/dpkgroup.jpg" alt="Header">
+	<div class="container boxtitle">
+		<button class="button boxtitlebutton">Gallery</button>
+	</div>
+</div>
+<div class="btn" id="section-scroller-button"><i class="fas fa-angle-down"></i></div>
+<!--end image header-->
+
+<!--gallery-->
+<div class="section-scroll">
+	<div class="galleryshape" id="hnsrgallery">
+		<div class="third">
+			<img src="img/betaxi.jpg" alt="Beta Xi" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			<img src="img/jadeletter.jpg" alt="Jade and Derrie" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			<img src="img/michellebin.jpg" alt="Michelle" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			<img src="img/zsis.jpg" alt="Nick and Sissi" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			<iframe src="https://www.youtube.com/embed/Gak_JINumAA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="third">
+			<img src="img/sissi.jpg" alt="Sissi paddle" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			<img src="img/rush.JPG" alt="Rush" onclick="openModal();currentSlide(6)" class="hover-shadow">
+			<img src="img/sissiletter.jpg" alt="Sissi gift exchange" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			<img src="img/lilju.jpg" alt="Lily and June" onclick="openModal();currentSlide(8)" class="hover-shadow">
+			<img src="img/roof.jpeg" alt="roof" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			<iframe src="https://www.youtube.com/embed/BIWNNOCcNuY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="third">
+			<img src="img/betanu.JPG" alt="Beta Nu" onclick="openModal();currentSlide(10)" class="hover-shadow">
+			<img src="img/littos.jpg" alt="Big Little" onclick="openModal();currentSlide(11)" class="hover-shadow">
+			<img src="img/famline.jpg" alt="Totem" onclick="openModal();currentSlide(12)" class="hover-shadow">
+			<img src="img/trio.jpg" alt="BN Trio" onclick="openModal();currentSlide(13)" class="hover-shadow">
+			<img src="img/formals.jpg" alt="Formals S20" onclick="openModal();currentSlide(14)" class="hover-shadow">
+			<iframe src="https://www.youtube.com/embed/E-ILCoe0OJA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!--Lightbox-->
+	<div id="picModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="slidescontain">
+			<div class="slide">
+				<div class="picnum">1 / 14</div>
+				<img src="img/betaxi.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">2 / 14</div>
+				<img src="img/jadeletter.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">3 / 14</div>
+				<img src="img/michellebin.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">4 / 14</div>
+				<img src="img/zsis.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">5 / 14</div>
+				<img src="img/sissi.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">6 / 14</div>
+				<img src="img/rush.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">7 / 14</div>
+				<img src="img/sissiletter.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">8 / 14</div>
+				<img src="img/lilju.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">9 / 14</div>
+				<img src="img/roof.jpeg">
+			</div>
+			<div class="slide">
+				<div class="picnum">10 / 14</div>
+				<img src="img/betanu.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">11 / 14</div>
+				<img src="img/littos.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">12 / 14</div>
+				<img src="img/famline.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">13 / 14</div>
+				<img src="img/trio.jpg">
+			</div>
+			<div class="slide">
+				<div class="picnum">14 / 14</div>
+				<img src="img/formals.jpg">
+			</div>
+
+			<!--next/previous-->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+</div>
+<!--end gallery-->
+
+<!--to top-->
+<div class="totop">	 
+	<a class="button totopbutton" href="#top">
+		<span class="totoptext">Go To Top</span>
+		<span class="totopup">
+		<i class="fa fa-chevron-circle-up"></i>
+		</span>
+	</a>
+</div>
+<!--end to top-->
+
+<!--social-->
+<div class="socialbar">
+	<h4>Find us on social media!</h4>
+	<a class="button social" href="https://www.facebook.com/uscdeltaphikappa" title="Facebook"><i class="fa fa-facebook"></i></a>
+	<a class="button social" href="https://www.youtube.com/channel/UCAcZMW5mtPCGT85GchjXk_w" title="Youtube"><i class="fa fa-youtube"></i></a>
+	<a class="button social" href="http://www.twitter.com/uscdeltas" title="Twitter"><i class="fa fa-twitter"></i></a>
+	<a class="button social" href="http://www.instagram.com/uscdeltaphikappa" title="Instagram"><i class="fa fa-instagram"></i></a>
+</div>
+<!--end social-->
+
+<!--email-->
+<div class="emailbar">
+	<p>Sign up with your email and we'll let you know when we start our next rush!</p>
+	<form>
+		<label for="email">Email: </label>
+		<input id="email" type="text" placeholder="name@mail.com">
+		<button class="form-button" type="submit">Sign Up</button>
+		<p id="email-error"></p>
+	</form>
+</div>
+<!--end email-->
+
+<!--script-->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="sectionScroller.min.js"></script>
+
+<script>
+$(".section-scroll").sectionScroller({
+	scrollerButton: "#section-scroller-button"
+});
+</script>
+
+<script>
+	//open and close lightbox function
+	function openModal() {
+		document.getElementById("picModal").style.display = "block";
+	}
+	function closeModal() {
+		document.getElementById("picModal").style.display = "none";
+	}
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	//controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+	//update current thumbnail
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+	//final function
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("slide");
+		if (n > slides.length) {
+			slideIndex = 1}
+		if (n < 1) {
+			slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex-1].style.display = "block";
+	}
+
+	//show email if there is value
+	if (localStorage.email !== undefined) {
+		document.querySelector("#email").value = localStorage.email;
+	}
+
+	//email regulation & save to local storage
+	document.querySelector("#emailform").onsubmit = function() {
+		var email = document.querySelector("#email").value.trim();
+		var emailReg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if (/^$/.test(email)) {
+			document.querySelector("#email-error").innerHTML = "Email cannot be empty.";
+		}
+		else if (emailReg.test(email) == false) {
+			document.querySelector("#email-error").innerHTML = "Sorry! That was an invalid email.";
+		}
+		else {
+			document.querySelector("#email-error").innerHTML = "Thank you! We'll send you updates about our next rush.";
+			localStorage.email = email;
+		}
+		return false
+	}
+</script>
+<!---->
+
+</body>
+
+</html>

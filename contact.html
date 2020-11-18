@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--meta-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Questions? Contact USC Deltas through any medium for a quick response.">
+<!---->
+
+<!--uicons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<!---->
+
+<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,800,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+<!---->
+
+	<link rel="stylesheet" type="text/css" href="sharedstyle.css">
+	<link rel="stylesheet" type="text/css" href="contactstyle.css">
+
+	<title>Contact Us</title>
+</head>
+
+<body>
+
+<!--nav-->
+<div class="nav">
+	<nav>
+		<input type="checkbox" id="navbutton">
+		<label for="navbutton">menu</label>
+
+		<div class="clearfloat"></div>
+		
+		<div class="nav-content">
+		<ul>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/contact.html">contact</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/rush.html">rush</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/gallery.html">gallery</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/sister.html">sisters</a></li>
+			<li><a href="http://viterbi-web.usc.edu/~junek/itp301/final_project/home.html">home</a></li>
+		</ul>
+		</div>
+	</nav>
+</div>
+<!--end nav-->
+
+<!--image header-->
+<div class="imghead" id="top">
+	<img class="imgheadimg" src="img/betaxi.jpg" alt="Beta Xi">
+	<div class="container boxtitle">
+		<button class="button boxtitlebutton">Contact</button>
+	</div>
+</div>
+<div class="btn" id="section-scroller-button"><i class="fas fa-angle-down"></i></div>
+<!--end image header-->
+
+<!--contact-->
+<div class="section-scroll">
+<div class="container contactcontain" id="contact">
+	<div class="leftcol">
+		<div class="contacttitle"><span class="contacttext">Contact Us</span></div>
+			<p>Please feel free to email us for any questions.</p>
+			<p><i class="fa fa-map-marker contacticon"></i>  University of Southern California, LA, CA</p>
+			<p><i class="fa fa-envelope-o contacticon"></i>  uscdpk@gmail.com</p>
+			<p><i class="fa fa-facebook contacticon"></i>  facebook.com/uscdeltaphikappa</p>
+			<p><i class="fa fa-instagram contacticon"></i>  instagram.com/uscdeltaphikappa</p>
+	</div>
+	<div class="rightcol">
+		<form id="user-form" class="container contactform" method="post" action="contact.php">
+		<div class="formsec">
+			<label>Name</label>
+			<input id="name" class="input" type="text" name="Name" required>
+		</div>
+		<div class="formsec">
+			<label>Email</label>
+			<input id="emailuser" class="input" type="text" name="Email" required>
+		</div>
+		<div class="formsec">
+			<label>Message</label>
+			<input id="message" class="input" type="text" name="Message" required>
+		</div>
+		<button type="submit" class="button submitbut">Send</button>
+		<button id="clear-btn" class="button submitbut" type="button">Clear</button>
+		</form>
+	</div>
+</div>
+</div>
+<!--end contact-->
+
+<!--social-->
+<div class="socialbar">
+	<h4>Find us on social media!</h4>
+	<a class="button social" href="https://www.facebook.com/uscdeltaphikappa" title="Facebook"><i class="fa fa-facebook"></i></a>
+	<a class="button social" href="https://www.youtube.com/channel/UCAcZMW5mtPCGT85GchjXk_w" title="Youtube"><i class="fa fa-youtube"></i></a>
+	<a class="button social" href="http://www.twitter.com/uscdeltas" title="Twitter"><i class="fa fa-twitter"></i></a>
+	<a class="button social" href="http://www.instagram.com/uscdeltaphikappa" title="Instagram"><i class="fa fa-instagram"></i></a>
+</div>
+<!--end social-->
+
+<!--email-->
+<div class="emailbar">
+	<p>Sign up with your email and we'll let you know when we start our next rush!</p>
+	<form id="emailform">
+		<label for="email">Email: </label>
+		<input id="email" type="text" placeholder="name@mail.com">
+		<button class="form-button" type="submit">Sign Up</button>
+		<p id="email-error"></p>
+	</form>
+</div>
+<!--end email-->
+
+<!--to top-->
+<div class="totop">
+	<a class="button totopbutton" href="#top">
+		<span class="totoptext">Go To Top</span>
+		<span class="totopup">
+		<i class="fa fa-chevron-circle-up"></i>
+		</span>
+	</a>
+</div>
+<!--end to top-->
+
+<!--script-->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="sectionScroller.min.js"></script>
+
+<script>
+$(".section-scroll").sectionScroller({
+  scrollerButton: "#section-scroller-button"
+});
+</script>
+
+<script>
+	//show email if there is value
+	if (localStorage.email !== undefined) {
+		document.querySelector("#email").value = localStorage.email;
+	}
+
+	//email regulation & save to local storage
+	document.querySelector("#emailform").onsubmit = function() {
+		var email = document.querySelector("#email").value.trim();
+		var emailReg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if (/^$/.test(email)) {
+			document.querySelector("#email-error").innerHTML = "Email cannot be empty.";
+		}
+		else if (emailReg.test(email) == false) {
+			document.querySelector("#email-error").innerHTML = "Sorry! That was an invalid email.";
+		}
+		else {
+			document.querySelector("#email-error").innerHTML = "Thank you! We'll send you updates about our next rush.";
+			localStorage.email = email;
+		}
+		return false
+	}
+</script>
+<!---->
+
+</body>
+
+</html>

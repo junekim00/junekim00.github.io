@@ -1,0 +1,99 @@
+#slideshow {
+  padding-top: 10vh;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100%;
+  height: 80vh;
+}
+
+#slideshow:hover .controls::before, #slideshow:hover .controls::after {
+  opacity: 1;
+}
+#slideshow #slideimg {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateX(-100vw);
+  transition: transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+}
+#slideshow #slideimg .slide {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 100vw;
+  max-width: 100%;
+  height: 80vh;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#slideshow .control-container {
+  height: inherit;
+}
+
+#slideshow .controls {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 33px;
+  height: 50px;
+  transform: translateY(-50%);
+}
+#slideshow .controls:hover {
+  cursor: pointer;
+}
+#slideshow .controls::before, #slideshow .controls::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  width: 35px;
+  height: 6px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.7);
+  top: 12px;
+  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  opacity: 0;
+}
+
+#slideshow .controls.prev {
+  left: 20px;
+}
+#slideshow .controls.prev::before, #slideshow .controls.prev::after {
+  top: 12px;
+  left: 0;
+}
+#slideshow .controls.prev::before {
+  transform: rotate(-45deg);
+  border-top-left-radius: 2px;
+}
+#slideshow .controls.prev::after {
+  transform: translateY(21px) rotate(45deg);
+  border-bottom-left-radius: 2px;
+}
+#slideshow .controls.next {
+  right: 20px;
+}
+#slideshow .controls.next::before, #slideshow .controls.next::after {
+  top: 12px;
+  right: 0;
+}
+#slideshow .controls.next::before {
+  transform: rotate(45deg);
+  border-top-left-radius: 2px;
+}
+#slideshow .controls.next::after {
+  transform: translateY(21px) rotate(-45deg);
+  border-bottom-left-radius: 2px;
+}

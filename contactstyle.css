@@ -1,0 +1,64 @@
+.contactcontain {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	width: 100%;
+}
+
+.leftcol {
+	float:left;
+	width: 40%;
+	padding: 0 3vh;
+}
+
+.rightcol {
+	float: left;
+	width: 55%;
+	padding: 0 1vh;
+}
+
+.contacttitle {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.contacttext {
+	font-size: 3vh;
+	border-bottom:6px solid #ffd0d7;
+}
+
+.contacticon {
+	font-size: 2vh;
+	color: #ffd0d7;
+}
+
+.contactform {
+	box-shadow:0 4px 20px 0 rgba(0,0,0,0.19);
+	color: black;
+	background-color: white;
+	padding: 2vh;
+	width: 100%
+}
+
+.formsec {
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+}
+
+.input {
+	display:block;
+	padding:1vh;
+	border:none;
+	border-bottom:1px solid #ccc;
+	width:90%
+}
+
+.submitbut {
+	float: right;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+}
+
+.submitbut:hover {
+	background-color: #ffd0d7;
+}

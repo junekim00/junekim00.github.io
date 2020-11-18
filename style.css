@@ -1,0 +1,97 @@
+/*--top--*/
+#top {
+	position: relative;
+	margin:0;}
+
+.lefttop {	
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 50vw;
+	display: inline-block;
+	float: left;
+	background-image: url(img/group.jpg);
+	background-size: cover;
+	background-position: center;}
+
+.righttop {	
+	position:absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	height: 100vh;
+	width: 50%;
+	display: inline-block;
+	justify-content: center;}
+
+h1 {
+	font-size: 13vw;
+	text-align: center;}
+
+/*--end top--*/
+
+/*--info--*/
+#info {
+	position: absolute;
+	top: 100vh;
+	display: block;
+	height: 100vh;
+	background-color: whitesmoke;}
+
+.infotop h2 {
+	margin-top: 10vh;
+	font-size: 35px;
+	text-align: center;
+	color: black;}
+
+.infodesc {
+	text-align: center;
+	padding-bottom: 30px;
+	color: darkgrey;
+	font-weight: 400;
+	font-style: italic;}
+
+.aboutimg {
+	height: auto;
+	width: 50vw;
+	float: left;
+	margin-right: 5vw;
+	margin-bottom: 3vh;}
+
+.content {
+	display: inline-block;
+	float: right;}
+
+.content h2 {
+	font-size: 25px;}
+
+.content h3 {
+	font-size: 20px;
+	color: grey;
+	font-style: italic;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;}
+
+/*--info--*/
+
+/*--slide--*/
+
+#slides {
+	margin: 0;
+	position: relative;
+	top: 200vh;
+	height: 100vh;
+	touch-action: none;}
+
+/*--end slides--*/
+
+/*--social--*/
+.socialbar {
+	position: absolute;
+	top: 300vh;}
+
+.emailbar {
+	position: absolute;
+	top: 325vh;
+}
